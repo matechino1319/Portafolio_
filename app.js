@@ -8,70 +8,119 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const PROJECT_DETAILS = {
-  'yunta': {
-    title: 'Yunta — Ecosistema de Automatización Empresarial',
-    tag: 'SUITE DE 7 MÓDULOS',
+  'chatbot-instagram': {
+    title: 'Chatbot de Instagram',
+    tag: 'AUTOMATIZACIÓN & FLUX N8N',
     html: `
-      <h4>1. Chatbot de Instagram</h4>
-      <p>Agente automatizado conectado mediante webhooks a n8n. Responde consultas frecuentes, califica prospectos y recopila datos de contacto automáticamente.</p>
-      
-      <h4>2. Chatbot de Sistemas</h4>
-      <p>Asistente interno para empleados conectado a WhatsApp mediante Twilio y base de datos Supabase (PostgreSQL). Gestiona tickets y pedidos de soporte de manera conversacional.</p>
-      
-      <h4>3. Panel de Scripts Web</h4>
-      <p>Dashboard web que permite al equipo administrativo ejecutar scripts en segundo plano para procesar informes biométricos, liquidaciones de convenios y reportes de empleados.</p>
-      
-      <h4>4. Monitor de Puertos</h4>
-      <p>Servicio en segundo plano (PowerShell) que monitorea las conexiones de red de los servidores locales. Si detecta un puerto nuevo no autorizado, envía una alerta push inmediata a Telegram.</p>
-      
-      <h4>5. Gestión de Alquileres & IPC</h4>
-      <p>Sistema para administrar propiedades y contratos de locales comerciales. Calcula de forma automática los incrementos acumulados según el Índice de Precios al Consumidor (IPC).</p>
-      
-      <h4>6. Automatización de Promociones</h4>
-      <p>Scripts en Python que analizan las ventas de cajeros y generan reportes de descuentos y beneficios aplicados a jubilados y vecinos.</p>
-      
-      <h4>7. Analizador de Particiones</h4>
-      <p>Herramienta para el diagnóstico y monitoreo de espacio en discos duros para prevenir saturación de servidores.</p>
+      <h4>Funcionamiento</h4>
+      <p>Agente conectado a la API de Instagram mediante webhooks en n8n. Responde automáticamente a mensajes directos (DMs) entrantes, detecta intención de compra y califica prospectos comerciales sin demoras.</p>
+      <div class="modal-code-block">Instagram DM → Webhook n8n → Router de Intención → Respuesta Automatizada</div>
+      <h4>Tecnologías</h4>
+      <p>n8n, Instagram Graph API, Webhooks, JSON.</p>
+    `
+  },
+  'chatbot-sistemas': {
+    title: 'Chatbot de Sistemas',
+    tag: 'HELP DESK & CONVERSACIONAL',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Mesa de ayuda conversacional interna para el personal de la empresa vía WhatsApp. Utiliza Twilio para la mensajería y Supabase (PostgreSQL) para gestionar el historial de sesiones y tickets de soporte.</p>
+      <div class="modal-code-block">WhatsApp (Empleado) → Twilio Trigger → n8n → Supabase DB</div>
+      <h4>Tecnologías</h4>
+      <p>Twilio WhatsApp API, Supabase, PostgreSQL, n8n.</p>
+    `
+  },
+  'panel-scripts': {
+    title: 'Panel de Scripts Web',
+    tag: 'GESTIÓN & AUTOMATIZACIÓN',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Aplicación web que permite a los operadores administrativos ejecutar procesos en segundo plano: cálculo de presentismo biométrico, reportes de convenios colectivos y liquidaciones de sueldos.</p>
+      <div class="modal-code-block">UI Web → Backend Flask → Ejecutor Asíncrono → Reporte Excel/CSV</div>
+      <h4>Tecnologías</h4>
+      <p>Python, Flask, SQLite, HTML5, CSS3, JavaScript.</p>
+    `
+  },
+  'monitor-puertos': {
+    title: 'Monitor de Puertos de Red',
+    tag: 'SEGURIDAD & TELEMETRÍA',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Servicio continuo en PowerShell que analiza los sockets TCP/UDP abiertos en los servidores. Compara contra un baseline de puertos permitidos y ante conexiones extrañas envía un reporte inmediato al bot de Telegram.</p>
+      <div class="modal-code-block">Socket Scanner (PowerShell) → Diff Engine → Alerta Push Telegram</div>
+      <h4>Tecnologías</h4>
+      <p>PowerShell Core, Windows API, Telegram Bot API.</p>
+    `
+  },
+  'alquileres-yunta': {
+    title: 'Gestión de Alquileres & Reajuste IPC',
+    tag: 'FINANZAS & INMOBILIARIO',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Plataforma para administrar contratos de locales comerciales. Calcula de forma automática el valor de la cuota ajustada según la inflación oficial acumulada (IPC).</p>
+      <div class="modal-code-block">Contrato → Índice IPC Oficial → Cálculo de Variación → Liquidación</div>
+      <h4>Tecnologías</h4>
+      <p>JavaScript ES6+, Python, SQLite.</p>
+    `
+  },
+  'promociones-yunta': {
+    title: 'Automatización de Promociones',
+    tag: 'ANÁLISIS DE DATOS COMERCIALES',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Procesamiento automatizado de tickets de venta y facturación para analizar el impacto de programas de beneficios (jubilados, vecinos) y rendimiento por cajero.</p>
+      <h4>Tecnologías</h4>
+      <p>Python, Pandas, Análisis de Datos.</p>
+    `
+  },
+  'analizador-particiones': {
+    title: 'Analizador de Particiones',
+    tag: 'DIAGNÓSTICO DE INFRAESTRUCTURA',
+    html: `
+      <h4>Funcionamiento</h4>
+      <p>Utilidad para auditar el estado del almacenamiento en discos y servidores locales, detectando archivos huérfanos y saturación de espacio.</p>
+      <h4>Tecnologías</h4>
+      <p>Python, OS Utilities.</p>
     `
   },
   'traductor-lsa': {
-    title: 'Traductor de Lengua de Señas Argentina (LSA)',
-    tag: 'VISIÓN ARTIFICIAL',
+    title: 'Traductor de Lengua de Señas (LSA)',
+    tag: 'VISIÓN POR COMPUTADORA',
     html: `
-      <h4>Captura y Extracción de Puntos</h4>
-      <p>Utiliza MediaPipe para extraer en tiempo real 42 puntos 3D de las articulaciones de las manos desde la cámara web.</p>
-      <div class="modal-code-block">Cámara Web → MediaPipe (42 Puntos 3D) → Vector Normalizado</div>
-      <h4>Clasificación & Streaming</h4>
-      <p>Un servidor FastAPI recibe las coordenadas por WebSockets a 30 FPS, clasifica la seña y devuelve la palabra traducida con síntesis de voz en el navegador.</p>
+      <h4>Funcionamiento</h4>
+      <p>MediaPipe extrae 42 puntos 3D de las articulaciones de las manos. Un backend FastAPI procesa las coordenadas vía WebSockets y devuelve la traducción en texto y voz.</p>
+      <div class="modal-code-block">Cámara → MediaPipe (42 Puntos 3D) → FastAPI WebSockets → Síntesis de Voz</div>
+      <h4>Tecnologías</h4>
+      <p>Python, MediaPipe, FastAPI, WebSockets, OpenCV.</p>
     `
   },
   'atom': {
     title: 'ATOM — Asistente de Escritorio por Voz',
     tag: 'AUTOMATIZACIÓN WINDOWS & LLM',
     html: `
-      <h4>Detección de Voz</h4>
-      <p>Monitoreo continuo del micrófono que activa el asistente únicamente al escuchar la palabra clave <i>"Atom"</i>.</p>
-      <div class="modal-code-block">Micrófono → Detección Wake-Word → Inferencia Groq → Automatizaciones</div>
-      <h4>Control de Aplicaciones</h4>
-      <p>Integra Windows UIAutomation para redactar y enviar mensajes en WhatsApp Desktop, Selenium para controlar música en YouTube saltando publicidad, y lanzamiento de aplicaciones.</p>
+      <h4>Funcionamiento</h4>
+      <p>Asistente por voz que responde con modelos Groq Llama 3.3. Integra automatización Win32/UIAutomation para WhatsApp Desktop y Selenium para reproducir música en YouTube.</p>
+      <div class="modal-code-block">Micrófono (Wake-word) → Groq Llama 3.3 → Control WhatsApp & Apps</div>
+      <h4>Tecnologías</h4>
+      <p>Python, Groq SDK, Edge-TTS, Win32 UIA, Selenium.</p>
     `
   },
   'roma': {
-    title: 'Roma Automotores — Calculadora de Crédito Prendario',
-    tag: 'FINANZAS & APIS',
+    title: 'Roma Automotores — Motor Prendario',
+    tag: 'MOTOR FINANCIERO & APIS',
     html: `
-      <h4>Motor de Cálculo Financiero</h4>
-      <p>Implementación matemática para simular planes de crédito prendario (PSA Finance y UVA), calculando cuotas fijas, gastos de transferencia, sellados y aforos según año del vehículo.</p>
-      <div class="modal-code-block">Frontend Operador → Backend Flask → roma_prendario.py → InfoAuto API</div>
-      <h4>Integración InfoAuto</h4>
-      <p>Conexión en tiempo real con la API oficial de InfoAuto para consultar listas de precios y marcas actualizadas al instante.</p>
+      <h4>Funcionamiento</h4>
+      <p>Calculadora de préstamos prendarios (PSA Finance y UVA) con consulta en vivo a la API oficial de InfoAuto para obtener precios de mercado y marcas actualizadas.</p>
+      <div class="modal-code-block">Frontend Operador → Flask Backend → roma_prendario.py → InfoAuto API</div>
+      <h4>Tecnologías</h4>
+      <p>Python, Flask, InfoAuto API, Pytest, JavaScript.</p>
     `
   }
 };
 
 function initFiltering() {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectCards = document.querySelectorAll('.project-box');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -98,7 +147,7 @@ function initModal() {
   const modalTitle = document.getElementById('modal-title');
   const modalTag = document.getElementById('modal-tag');
   const modalBody = document.getElementById('modal-body');
-  const inspectBtns = document.querySelectorAll('.btn-outline');
+  const inspectBtns = document.querySelectorAll('.btn-detail');
 
   inspectBtns.forEach(btn => {
     btn.addEventListener('click', () => {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mateo Martinez | Proyectos & Código</title>
-  <meta name="description" content="Portfolio de proyectos de desarrollo de software y automatizaciones de Mateo Martinez (@matechino1319).">
+  <meta name="description" content="Portfolio de Mateo Martinez (@matechino1319). Proyectos de software, visión artificial, automatización empresarial y herramientas web.">
   
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%23e60a15'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-size='55' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>">
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="theme.css?v=5.0">
+  <link rel="stylesheet" href="theme.css?v=6.0">
 </head>
 <body>
 
@@ -45,126 +45,185 @@
   </header>
 
   <main>
-    <!-- Projects Section (Directamente arriba) -->
+    <!-- Projects Section -->
     <section class="section-projects" id="proyectos">
       <div class="container">
         
         <div class="top-title-row">
           <div>
             <span class="sub-badge">PORTFOLIO</span>
-            <h1 class="section-title">Proyectos</h1>
+            <h1 class="section-title">Todos los Proyectos</h1>
           </div>
 
           <!-- Filter Bar -->
           <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn active" data-filter="all">Todos (10)</button>
             <button class="filter-btn" data-filter="yunta">Ecosistema Yunta</button>
-            <button class="filter-btn" data-filter="vision">Visión por Computadora</button>
-            <button class="filter-btn" data-filter="desktop">Desktop / Bots</button>
-            <button class="filter-btn" data-filter="web">Web / Finanzas</button>
+            <button class="filter-btn" data-filter="ai">IA & Visión</button>
+            <button class="filter-btn" data-filter="bots">Bots & Automatización</button>
+            <button class="filter-btn" data-filter="web">Web & Finanzas</button>
           </div>
         </div>
 
-        <!-- Projects Grid -->
+        <!-- Projects Grid: Individual Cards for Every Single Project -->
         <div class="projects-list">
           
-          <!-- Card 1: Yunta Ecosystem (Featured) -->
-          <article class="project-box yunta-featured" data-category="yunta web desktop" data-id="yunta">
+          <!-- 1. Chatbot de Instagram -->
+          <article class="project-box" data-category="yunta bots" data-id="chatbot-instagram">
             <div class="box-top">
-              <span class="badge-red">ECOSISTEMA EMPRESARIAL</span>
-              <span class="modules-count">7 Módulos</span>
+              <span class="badge-red">YUNTA · AUTOMATIZACIÓN</span>
             </div>
-            
-            <h2 class="box-title">Yunta — Herramientas y Automatizaciones para la Empresa</h2>
+            <h2 class="box-title">Chatbot de Instagram</h2>
             <p class="box-desc">
-              Conjunto de aplicaciones, scripts y bots desarrollados para optimizar el trabajo operativo y administrativo de la empresa:
+              Agente automatizado para responder mensajes directos (DMs) en Instagram, calificar prospectos de clientes y derivar consultas comerciales mediante flujos en n8n y webhooks.
             </p>
-
-            <div class="modules-grid">
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Chatbot de Instagram</strong>
-                </div>
-                <p>Respuestas automáticas a mensajes directos y captación de clientes mediante flujos en n8n.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Chatbot de Sistemas</strong>
-                </div>
-                <p>Mesa de ayuda para empleados por WhatsApp con Twilio y base de datos en Supabase.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Panel de Scripts Web</strong>
-                </div>
-                <p>Dashboard web para ejecutar informes biométricos, convenios y reportes de personal.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Monitor de Puertos</strong>
-                </div>
-                <p>Monitoreo de conexiones de red locales con alertas automáticas a Telegram.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Gestión de Alquileres</strong>
-                </div>
-                <p>Control de locales comerciales y cálculo automático de reajustes de alquiler por IPC.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Automatización de Promociones</strong>
-                </div>
-                <p>Generación de reportes de descuentos aplicados a clientes, jubilados y vecinos.</p>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <span class="module-dot"></span>
-                  <strong>Analizador de Particiones</strong>
-                </div>
-                <p>Diagnóstico de almacenamiento y espacio en disco para servidores de trabajo.</p>
-              </div>
-            </div>
-
             <div class="tags-row">
-              <span class="tag">Python</span>
               <span class="tag">n8n</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">PowerShell</span>
-              <span class="tag">Telegram Bot</span>
-              <span class="tag">Twilio</span>
-              <span class="tag">HTML / CSS / JS</span>
+              <span class="tag">Instagram API</span>
+              <span class="tag">Webhooks</span>
+              <span class="tag">JSON</span>
             </div>
-
             <div class="box-actions">
-              <button class="btn-detail" data-target="yunta">Detalle técnico</button>
-              <a href="https://github.com/matechino1319/Yunta" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver repositorio</a>
+              <button class="btn-detail" data-target="chatbot-instagram">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Chatbot%20de%20Instagram" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
             </div>
           </article>
 
-          <!-- Card 2: Traductor LSA -->
-          <article class="project-box" data-category="vision" data-id="traductor-lsa">
+          <!-- 2. Chatbot de Sistemas -->
+          <article class="project-box" data-category="yunta bots" data-id="chatbot-sistemas">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · SOPORTE & HELP DESK</span>
+            </div>
+            <h2 class="box-title">Chatbot de Sistemas</h2>
+            <p class="box-desc">
+              Asistente de soporte técnico interno para empleados conectado a WhatsApp mediante Twilio y base de datos Supabase. Gestiona tickets y consultas de forma conversacional.
+            </p>
+            <div class="tags-row">
+              <span class="tag">Twilio</span>
+              <span class="tag">WhatsApp</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">n8n</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="chatbot-sistemas">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Chatbot%20de%20sistemas" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 3. Panel de Scripts Web -->
+          <article class="project-box" data-category="yunta web" data-id="panel-scripts">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · GESTIÓN WEB</span>
+            </div>
+            <h2 class="box-title">Panel de Scripts Web</h2>
+            <p class="box-desc">
+              Dashboard web administrativo para la ejecución controlada de scripts en segundo plano: procesamiento de reportes biométricos, convenios laborales y liquidaciones de personal.
+            </p>
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="panel-scripts">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Panel%20de%20scripts" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 4. Monitor de Puertos -->
+          <article class="project-box" data-category="yunta bots" data-id="monitor-puertos">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · SEGURIDAD & REDES</span>
+            </div>
+            <h2 class="box-title">Monitor de Puertos</h2>
+            <p class="box-desc">
+              Servicio en segundo plano que monitorea conexiones de red locales TCP/UDP. Aprende el baseline de puertos autorizados y envía alertas push inmediatas a Telegram ante anomalías.
+            </p>
+            <div class="tags-row">
+              <span class="tag">PowerShell</span>
+              <span class="tag">Telegram Bot API</span>
+              <span class="tag">Daemon</span>
+              <span class="tag">Network Security</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="monitor-puertos">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Monitor%20de%20puertos" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 5. Gestión de Alquileres & IPC -->
+          <article class="project-box" data-category="yunta web" data-id="alquileres-yunta">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · REAL ESTATE & IPC</span>
+            </div>
+            <h2 class="box-title">Gestión de Alquileres & Reajuste IPC</h2>
+            <p class="box-desc">
+              Sistema para administración de locales comerciales y contratos de alquiler. Calcula automáticamente los aumentos acumulados según el Índice de Precios al Consumidor (IPC).
+            </p>
+            <div class="tags-row">
+              <span class="tag">JavaScript SPA</span>
+              <span class="tag">Python</span>
+              <span class="tag">Algoritmo IPC</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="alquileres-yunta">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Alquileres" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 6. Automatización de Promociones -->
+          <article class="project-box" data-category="yunta web" data-id="promociones-yunta">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · ANÁLISIS DE DATOS</span>
+            </div>
+            <h2 class="box-title">Automatización de Promociones</h2>
+            <p class="box-desc">
+              Scripts de procesamiento y análisis comercial de tickets de venta para cajeros. Genera reportes detallados de descuentos aplicados a jubilados y clientes del programa vecinos.
+            </p>
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas / Excel</span>
+              <span class="tag">Data Processing</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="promociones-yunta">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Automatizacion%20de%20promociones" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 7. Analizador de Particiones -->
+          <article class="project-box" data-category="yunta bots" data-id="analizador-particiones">
+            <div class="box-top">
+              <span class="badge-red">YUNTA · INFRAESTRUCTURA</span>
+            </div>
+            <h2 class="box-title">Analizador de Particiones</h2>
+            <p class="box-desc">
+              Herramienta de diagnóstico y control de espacio de almacenamiento en servidores de producción para alertar preventivamente sobre saturación de discos duros.
+            </p>
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">OS Utilities</span>
+              <span class="tag">Storage Diagnostics</span>
+            </div>
+            <div class="box-actions">
+              <button class="btn-detail" data-target="analizador-particiones">Detalle técnico</button>
+              <a href="https://github.com/matechino1319/Yunta/tree/main/Analizador%20de%20Particiones" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
+            </div>
+          </article>
+
+          <!-- 8. Traductor de Lengua de Señas (LSA) -->
+          <article class="project-box" data-category="ai" data-id="traductor-lsa">
             <div class="box-top">
               <span class="badge-red">VISIÓN POR COMPUTADORA</span>
             </div>
-            
             <h2 class="box-title">Traductor de Lengua de Señas (LSA)</h2>
             <p class="box-desc">
-              Reconocimiento de gestos de Lengua de Señas Argentina en tiempo real con cámara web. Extrae 42 puntos de las manos con MediaPipe y los traduce a texto y voz en una app web con FastAPI y WebSockets.
+              Reconocimiento de señas en tiempo real con cámara web. Extrae 42 puntos 3D de las manos con MediaPipe y los traduce a texto y voz en una aplicación web con FastAPI y WebSockets.
             </p>
-
             <div class="tags-row">
               <span class="tag">Python</span>
               <span class="tag">MediaPipe</span>
@@ -172,24 +231,21 @@
               <span class="tag">WebSockets</span>
               <span class="tag">OpenCV</span>
             </div>
-
             <div class="box-actions">
               <button class="btn-detail" data-target="traductor-lsa">Detalle técnico</button>
-              <a href="https://github.com/matechino1319/traductor-senas" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver repositorio</a>
+              <a href="https://github.com/matechino1319/traductor-senas" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
             </div>
           </article>
 
-          <!-- Card 3: ATOM -->
-          <article class="project-box" data-category="desktop" data-id="atom">
+          <!-- 9. ATOM Asistente por Voz -->
+          <article class="project-box" data-category="ai bots" data-id="atom">
             <div class="box-top">
-              <span class="badge-red">DESKTOP / AUTOMATIZACIÓN</span>
+              <span class="badge-red">DESKTOP / ASISTENTE IA</span>
             </div>
-            
             <h2 class="box-title">ATOM — Asistente de Escritorio por Voz</h2>
             <p class="box-desc">
-              Asistente para Windows controlado por voz (wake-word). Envía mensajes en WhatsApp Desktop mediante UIAutomation, reproduce música en YouTube saltando publicidad y abre programas de la PC.
+              Asistente por voz para Windows con detección wake-word. Automatiza WhatsApp Desktop con UIAutomation, controla YouTube saltando publicidad y abre aplicaciones de la PC.
             </p>
-
             <div class="tags-row">
               <span class="tag">Python</span>
               <span class="tag">Groq Llama-3.3</span>
@@ -197,24 +253,21 @@
               <span class="tag">Selenium</span>
               <span class="tag">Win32 / UIA</span>
             </div>
-
             <div class="box-actions">
               <button class="btn-detail" data-target="atom">Detalle técnico</button>
-              <a href="https://github.com/matechino1319/atom" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver repositorio</a>
+              <a href="https://github.com/matechino1319/atom" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
             </div>
           </article>
 
-          <!-- Card 4: Roma Prendario -->
+          <!-- 10. Roma Prendario -->
           <article class="project-box" data-category="web" data-id="roma">
             <div class="box-top">
               <span class="badge-red">WEB / FINANZAS</span>
             </div>
-            
-            <h2 class="box-title">Roma Automotores — Calculadora de Crédito Prendario</h2>
+            <h2 class="box-title">Roma Automotores — Motor Prendario</h2>
             <p class="box-desc">
-              Simulador financiero para cotizar préstamos prendarios (PSA Finance y UVA). Consulta valores de mercado de autos en vivo desde la API de InfoAuto y valida relación cuota/ingreso.
+              Calculadora financiera para simulación de préstamos prendarios (PSA Finance y UVA). Consulta precios oficiales en vivo desde la API de InfoAuto y valida relación cuota/ingreso.
             </p>
-
             <div class="tags-row">
               <span class="tag">Python</span>
               <span class="tag">Flask</span>
@@ -222,10 +275,9 @@
               <span class="tag">Pytest</span>
               <span class="tag">JavaScript</span>
             </div>
-
             <div class="box-actions">
               <button class="btn-detail" data-target="roma">Detalle técnico</button>
-              <a href="https://github.com/matechino1319/roma" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver repositorio</a>
+              <a href="https://github.com/matechino1319/roma" target="_blank" rel="noopener noreferrer" class="btn-github-link">Ver en GitHub</a>
             </div>
           </article>
 
@@ -314,6 +366,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=5.0"></script>
+  <script src="app.js?v=6.0"></script>
 </body>
 </html>
