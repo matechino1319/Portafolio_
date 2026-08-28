@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mateo Martinez | Desarrollador de Software</title>
-  <meta name="description" content="Portfolio de Mateo Martinez (@matechino1319). Proyectos de desarrollo de software, visión artificial, automatización empresarial y aplicaciones web.">
+  <meta name="description" content="Portfolio de Mateo Martinez (@matechino1319). Proyectos de software, visión artificial, automatización empresarial y herramientas web.">
   
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e60a15'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>">
@@ -15,27 +15,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
 
-  <!-- Header / Navigation -->
+  <!-- Header -->
   <header class="site-header" id="navbar">
     <div class="container header-container">
       <a href="#" class="brand-logo">
-        <span class="logo-circle">M</span>
-        <span class="logo-name">Mateo Martinez</span>
+        <span class="logo-box">M</span>
+        <span class="logo-text">Mateo Martinez</span>
       </a>
       
-      <nav class="nav-menu" id="nav-menu">
+      <nav class="nav-menu">
         <a href="#proyectos" class="nav-link">Proyectos</a>
         <a href="#habilidades" class="nav-link">Tecnologías</a>
-        <a href="#experiencia" class="nav-link">Sobre mí</a>
         <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
 
       <div class="header-actions">
-        <a href="https://github.com/matechino1319" target="_blank" rel="noopener noreferrer" class="btn-github-pill" id="btn-gh-profile">
+        <a href="https://github.com/matechino1319" target="_blank" rel="noopener noreferrer" class="btn-github-top">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
@@ -45,331 +44,343 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main>
+    <!-- Hero Section -->
     <section class="hero-section" id="hero">
       <div class="container hero-container">
         <div class="hero-badge">
-          <span class="pulse-dot"></span>
-          <span>Desarrollador de Software · Disponible para proyectos</span>
+          <span class="status-indicator"></span>
+          <span>Desarrollador de Software</span>
         </div>
         
         <h1 class="hero-title">
-          Construyo herramientas útiles, <span class="highlight-text">automatizaciones</span> y sistemas que resuelven problemas reales.
+          Proyectos, Automatizaciones y <span class="text-red">Desarrollo de Software</span>
         </h1>
         
         <p class="hero-subtitle">
-          Desarrollo software enfocado en la práctica: desde modelos de <strong>visión artificial</strong> y asistentes por voz, hasta <strong>paneles de control</strong>, bots de atención al cliente y motores de cálculo para empresas.
+          Programador enfocado en soluciones reales: visión por computadora, automatización de procesos de oficina, bots de mensajería y aplicaciones web.
         </p>
 
-        <div class="hero-cta-group">
-          <a href="#proyectos" class="btn btn-primary">
-            <span>Ver mis proyectos</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-            </svg>
-          </a>
-          <a href="#contacto" class="btn btn-secondary">Contactarme</a>
-        </div>
-
-        <!-- Metric cards -->
-        <div class="hero-metric-grid">
-          <div class="metric-card">
-            <span class="metric-value">7+</span>
-            <span class="metric-label">Proyectos en producción</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-value">Python & JS</span>
-            <span class="metric-label">Stack principal</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-value">100%</span>
-            <span class="metric-label">Código funcional</span>
-          </div>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-red">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contacto</a>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section projects-section" id="proyectos">
+    <section class="section-projects" id="proyectos">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">PORTFOLIO</span>
-          <h2 class="section-title">Mis Proyectos</h2>
-          <p class="section-desc">Selección de herramientas, plataformas y desarrollos que programé.</p>
+        <div class="section-heading">
+          <span class="sub-badge">PORTFOLIO</span>
+          <h2 class="section-title">Proyectos Destacados</h2>
         </div>
 
         <!-- Filter Bar -->
-        <div class="filter-bar" id="filter-bar">
+        <div class="filter-bar">
           <button class="filter-btn active" data-filter="all">Todos</button>
           <button class="filter-btn" data-filter="yunta">Ecosistema Yunta</button>
-          <button class="filter-btn" data-filter="ai">IA & Visión Artificial</button>
-          <button class="filter-btn" data-filter="automation">Automatización</button>
-          <button class="filter-btn" data-filter="web">Web & Gestión</button>
+          <button class="filter-btn" data-filter="vision">Visión por Computadora</button>
+          <button class="filter-btn" data-filter="desktop">Desktop / Bots</button>
+          <button class="filter-btn" data-filter="web">Web / Finanzas</button>
         </div>
 
         <!-- Projects Grid -->
-        <div class="projects-grid" id="projects-grid">
+        <div class="projects-list">
           
-          <!-- Project 1: Yunta Ecosystem (Monorepo destacado) -->
-          <article class="project-card featured-card" data-category="yunta automation web" data-id="yunta">
-            <div class="card-header">
-              <div class="tag-pill tag-red">ECOSISTEMA EMPRESARIAL</div>
-              <span class="folder-badge">7 Módulos</span>
+          <!-- Card 1: Yunta Ecosystem (Featured) -->
+          <article class="project-box yunta-featured" data-category="yunta web desktop" data-id="yunta">
+            <div class="box-top">
+              <span class="badge-red">ECOSISTEMA YUNTA</span>
+              <span class="modules-count">7 Módulos</span>
             </div>
-            <h3 class="project-title">Yunta — Suite Integral de Automatización & Bots</h3>
-            <p class="project-summary">
-              Conjunto de herramientas y aplicaciones para agilizar operaciones diarias de la empresa:
+            
+            <h3 class="box-title">Yunta — Herramientas y Automatizaciones para la Empresa</h3>
+            <p class="box-desc">
+              Conjunto de aplicaciones, scripts y bots desarrollados para optimizar el trabajo operativo y administrativo de la empresa:
             </p>
-            <ul class="yunta-module-list">
-              <li><strong>Chatbot de Instagram:</strong> Respuestas automáticas a DMs y captación de clientes vía n8n.</li>
-              <li><strong>Chatbot de Sistemas:</strong> Mesa de ayuda para empleados por WhatsApp (Twilio + Supabase).</li>
-              <li><strong>Panel de Scripts Web:</strong> Interfaz web para ejecutar informes biométricos y convenios.</li>
-              <li><strong>Monitor de Puertos:</strong> Detección de puertos abiertos y alertas en Telegram.</li>
-              <li><strong>Alquileres:</strong> Gestión de contratos y cálculo automático de reajustes por IPC.</li>
-              <li><strong>Promociones:</strong> Informes de ventas para cajeros, jubilados y vecinos.</li>
-              <li><strong>Analizador de Particiones:</strong> Herramienta para diagnóstico de espacio en discos.</li>
-            </ul>
-            <div class="tech-tag-cloud">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">n8n</span>
-              <span class="tech-tag">Supabase</span>
-              <span class="tech-tag">PowerShell</span>
-              <span class="tech-tag">Telegram Bot</span>
-              <span class="tech-tag">Twilio</span>
-              <span class="tech-tag">HTML / JS</span>
+
+            <div class="modules-grid">
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Chatbot de Instagram</strong>
+                </div>
+                <p>Respuestas automáticas a mensajes directos y captación de clientes mediante flujos en n8n.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Chatbot de Sistemas</strong>
+                </div>
+                <p>Mesa de ayuda para empleados por WhatsApp con Twilio y base de datos en Supabase.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Panel de Scripts Web</strong>
+                </div>
+                <p>Dashboard web para ejecutar informes biométricos, convenios y reportes de personal.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Monitor de Puertos</strong>
+                </div>
+                <p>Monitoreo de conexiones de red locales con alertas automáticas a Telegram.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Gestión de Alquileres</strong>
+                </div>
+                <p>Control de locales comerciales y cálculo automático de reajustes de alquiler por IPC.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Automatización de Promociones</strong>
+                </div>
+                <p>Generación de reportes de descuentos aplicados a clientes, jubilados y vecinos.</p>
+              </div>
+
+              <div class="module-item">
+                <div class="module-header">
+                  <span class="module-dot"></span>
+                  <strong>Analizador de Particiones</strong>
+                </div>
+                <p>Diagnóstico de almacenamiento y espacio en disco para servidores de trabajo.</p>
+              </div>
             </div>
-            <div class="card-footer">
-              <button class="btn-card btn-outline" data-target="yunta">
+
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">Telegram Bot</span>
+              <span class="tag">Twilio</span>
+              <span class="tag">HTML / CSS / JS</span>
+            </div>
+
+            <div class="box-actions">
+              <button class="btn-detail" data-target="yunta">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                   <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                 </svg>
-                <span>Ver Detalle de Módulos</span>
+                <span>Detalle técnico</span>
               </button>
-              <a href="https://github.com/matechino1319/Yunta" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/matechino1319/Yunta" target="_blank" rel="noopener noreferrer" class="btn-github-link">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
-                <span>Ver en GitHub</span>
+                <span>Ver repositorio</span>
               </a>
             </div>
           </article>
 
-          <!-- Project 2: Traductor LSA -->
-          <article class="project-card" data-category="ai" data-id="traductor-lsa">
-            <div class="card-header">
-              <div class="tag-pill tag-red">VISIÓN ARTIFICIAL & IA</div>
-              <span class="icon-indicator">🤟</span>
+          <!-- Card 2: Traductor LSA -->
+          <article class="project-box" data-category="vision" data-id="traductor-lsa">
+            <div class="box-top">
+              <span class="badge-red">VISIÓN POR COMPUTADORA</span>
+              <span class="icon-tag">🤟</span>
             </div>
-            <h3 class="project-title">Traductor de Lengua de Señas (LSA)</h3>
-            <p class="project-summary">
-              Sistema que reconoce gestos de Lengua de Señas Argentina en tiempo real usando la cámara web. Extrae 42 puntos clave de las manos con MediaPipe y los traduce a texto y voz mediante una aplicación web con FastAPI y WebSockets.
+            
+            <h3 class="box-title">Traductor de Lengua de Señas (LSA)</h3>
+            <p class="box-desc">
+              Reconocimiento de gestos de Lengua de Señas Argentina en tiempo real con cámara web. Extrae 42 puntos de las manos con MediaPipe y los traduce a texto y voz en una app web con FastAPI y WebSockets.
             </p>
-            <div class="tech-tag-cloud">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">MediaPipe</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">WebSockets</span>
-              <span class="tech-tag">OpenCV</span>
+
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">OpenCV</span>
             </div>
-            <div class="card-footer">
-              <button class="btn-card btn-outline" data-target="traductor-lsa">
+
+            <div class="box-actions">
+              <button class="btn-detail" data-target="traductor-lsa">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                   <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                 </svg>
-                <span>Cómo Funciona</span>
+                <span>Detalle técnico</span>
               </button>
-              <a href="https://github.com/matechino1319/traductor-senas" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/matechino1319/traductor-senas" target="_blank" rel="noopener noreferrer" class="btn-github-link">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
-                <span>Ver en GitHub</span>
+                <span>Ver repositorio</span>
               </a>
             </div>
           </article>
 
-          <!-- Project 3: ATOM -->
-          <article class="project-card" data-category="ai automation" data-id="atom">
-            <div class="card-header">
-              <div class="tag-pill tag-red">ASISTENTE POR VOZ</div>
-              <span class="icon-indicator">⚡</span>
+          <!-- Card 3: ATOM -->
+          <article class="project-box" data-category="desktop" data-id="atom">
+            <div class="box-top">
+              <span class="badge-red">DESKTOP / AUTOMATIZACIÓN</span>
+              <span class="icon-tag">⚡</span>
             </div>
-            <h3 class="project-title">ATOM — Asistente de Escritorio para Windows</h3>
-            <p class="project-summary">
-              Asistente controlado por voz que se activa al decir "Atom". Utiliza inteligencia artificial rápida para responder, controla WhatsApp de escritorio para enviar mensajes, reproduce videos en YouTube y abre programas de la PC.
+            
+            <h3 class="box-title">ATOM — Asistente de Escritorio por Voz</h3>
+            <p class="box-desc">
+              Asistente para Windows controlado por voz (wake-word). Envía mensajes en WhatsApp Desktop mediante UIAutomation, reproduce música en YouTube saltando publicidad y abre programas de la PC.
             </p>
-            <div class="tech-tag-cloud">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Groq Llama-3.3</span>
-              <span class="tech-tag">Edge-TTS</span>
-              <span class="tech-tag">Selenium</span>
-              <span class="tech-tag">Win32 / UIA</span>
+
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">Groq Llama-3.3</span>
+              <span class="tag">Edge-TTS</span>
+              <span class="tag">Selenium</span>
+              <span class="tag">Win32 / UIA</span>
             </div>
-            <div class="card-footer">
-              <button class="btn-card btn-outline" data-target="atom">
+
+            <div class="box-actions">
+              <button class="btn-detail" data-target="atom">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                   <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                 </svg>
-                <span>Cómo Funciona</span>
+                <span>Detalle técnico</span>
               </button>
-              <a href="https://github.com/matechino1319/atom" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/matechino1319/atom" target="_blank" rel="noopener noreferrer" class="btn-github-link">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
-                <span>Ver en GitHub</span>
+                <span>Ver repositorio</span>
               </a>
             </div>
           </article>
 
-          <!-- Project 4: Roma Prendario -->
-          <article class="project-card" data-category="web" data-id="roma">
-            <div class="card-header">
-              <div class="tag-pill tag-red">SISTEMA FINANCIERO</div>
-              <span class="icon-indicator">📊</span>
+          <!-- Card 4: Roma Prendario -->
+          <article class="project-box" data-category="web" data-id="roma">
+            <div class="box-top">
+              <span class="badge-red">WEB / FINANZAS</span>
+              <span class="icon-tag">📊</span>
             </div>
-            <h3 class="project-title">Roma Automotores — Calculadora de Créditos</h3>
-            <p class="project-summary">
-              Motor de cálculo financiero para cotizar préstamos prendarios (PSA Finance y UVA) para compra de autos. Incluye búsqueda de precios oficiales en tiempo real mediante la API de InfoAuto y validación de cuotas según el ingreso del cliente.
+            
+            <h3 class="box-title">Roma Automotores — Calculadora de Crédito Prendario</h3>
+            <p class="box-desc">
+              Simulador financiero para cotizar préstamos prendarios (PSA Finance y UVA). Consulta valores de mercado de autos en vivo desde la API de InfoAuto y valida relación cuota/ingreso.
             </p>
-            <div class="tech-tag-cloud">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">InfoAuto API</span>
-              <span class="tech-tag">Pytest</span>
-              <span class="tech-tag">JavaScript</span>
+
+            <div class="tags-row">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">InfoAuto API</span>
+              <span class="tag">Pytest</span>
+              <span class="tag">JavaScript</span>
             </div>
-            <div class="card-footer">
-              <button class="btn-card btn-outline" data-target="roma">
+
+            <div class="box-actions">
+              <button class="btn-detail" data-target="roma">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                   <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                 </svg>
-                <span>Cómo Funciona</span>
+                <span>Detalle técnico</span>
               </button>
-              <a href="https://github.com/matechino1319/roma" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/matechino1319/roma" target="_blank" rel="noopener noreferrer" class="btn-github-link">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
-                <span>Ver en GitHub</span>
+                <span>Ver repositorio</span>
               </a>
             </div>
           </article>
-          
+
         </div>
       </div>
     </section>
 
-    <!-- Technologies Section -->
-    <section class="section skills-section" id="habilidades">
+    <!-- Tech Stack Section -->
+    <section class="section-tech" id="habilidades">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">HERRAMIENTAS</span>
-          <h2 class="section-title">Tecnologías que utilizo</h2>
-          <p class="section-desc">Lenguajes y herramientas con los que construyo soluciones.</p>
+        <div class="section-heading">
+          <span class="sub-badge">TECNOLOGÍAS</span>
+          <h2 class="section-title">Lenguajes y Herramientas</h2>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h3 class="skill-box-title">Lenguajes</h3>
-            <div class="skill-tags">
-              <span class="tag-item">Python</span>
-              <span class="tag-item">JavaScript (ES6+)</span>
-              <span class="tag-item">SQL</span>
-              <span class="tag-item">PowerShell</span>
-              <span class="tag-item">HTML5 & CSS3</span>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h4>Lenguajes</h4>
+            <div class="chip-list">
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript (ES6+)</span>
+              <span class="chip">SQL</span>
+              <span class="chip">PowerShell</span>
+              <span class="chip">HTML5 & CSS3</span>
             </div>
           </div>
 
-          <div class="skill-box">
-            <h3 class="skill-box-title">Frameworks & Backend</h3>
-            <div class="skill-tags">
-              <span class="tag-item">FastAPI</span>
-              <span class="tag-item">Flask</span>
-              <span class="tag-item">WebSockets</span>
-              <span class="tag-item">Supabase</span>
-              <span class="tag-item">SQLite / PostgreSQL</span>
+          <div class="tech-card">
+            <h4>Backend & Bases de Datos</h4>
+            <div class="chip-list">
+              <span class="chip">FastAPI</span>
+              <span class="chip">Flask</span>
+              <span class="chip">WebSockets</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">SQLite / PostgreSQL</span>
             </div>
           </div>
 
-          <div class="skill-box">
-            <h3 class="skill-box-title">Automatización & Datos</h3>
-            <div class="skill-tags">
-              <span class="tag-item">n8n Workflows</span>
-              <span class="tag-item">MediaPipe</span>
-              <span class="tag-item">OpenCV</span>
-              <span class="tag-item">Selenium</span>
-              <span class="tag-item">Win32 UI Automation</span>
+          <div class="tech-card">
+            <h4>Automatización & Visión</h4>
+            <div class="chip-list">
+              <span class="chip">n8n Workflows</span>
+              <span class="chip">MediaPipe</span>
+              <span class="chip">OpenCV</span>
+              <span class="chip">Selenium</span>
+              <span class="chip">Windows UI Automation</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about-section" id="experiencia">
-      <div class="container">
-        <div class="about-card">
-          <div class="about-content">
-            <span class="section-tag">SOBRE MÍ</span>
-            <h2 class="about-title">Pragmático, técnico y enfocado en resultados</h2>
-            <p>
-              Me dedico a escribir código que ahorre tiempo y automatice tareas complejas. Me gusta entender el problema de fondo antes de programar y elegir la herramienta más simple y efectiva para cada trabajo.
-            </p>
-            <p>
-              Tengo experiencia integrando APIs, creando bots para atención y soporte, procesando datos comerciales y desarrollando modelos de visión por computadora para aplicaciones interactivas.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-section" id="contacto">
+    <section class="section-contact" id="contacto">
       <div class="container">
-        <div class="contact-card">
-          <span class="section-tag">CONTACTO</span>
-          <h2 class="contact-title">¿Hablamos de algún proyecto o propuesta?</h2>
-          <p class="contact-desc">
-            Podés revisar todos mis repositorios en GitHub o escribirme para conversar.
+        <div class="contact-box">
+          <span class="sub-badge">CONTACTO</span>
+          <h2 class="contact-title">¿Conversamos sobre un proyecto?</h2>
+          <p class="contact-text">
+            Podés ver el código de todos los proyectos en mi cuenta de GitHub.
           </p>
-          <div class="contact-btn-wrapper">
-            <a href="https://github.com/matechino1319" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              <span>Ir a mi GitHub (@matechino1319)</span>
-            </a>
-          </div>
+          <a href="https://github.com/matechino1319" target="_blank" rel="noopener noreferrer" class="btn btn-red">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Ver perfil en GitHub (@matechino1319)</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-container">
-      <p>© 2026 Mateo Martinez · Desarrollador de Software</p>
-      <p class="footer-sub">Mendoza, Argentina</p>
+    <div class="container footer-row">
+      <p>© 2026 Mateo Martinez · Mendoza, Argentina</p>
     </div>
   </footer>
 
-  <!-- Detail Modal -->
+  <!-- Modal -->
   <div class="modal-overlay" id="detail-modal" aria-hidden="true">
     <div class="modal-card">
       <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
-      <div class="modal-header">
-        <span class="tag-pill tag-red" id="modal-tag">DETALLE TÉCNICO</span>
-        <h3 class="modal-title" id="modal-title">Título del Proyecto</h3>
-      </div>
-      <div class="modal-body" id="modal-body">
-        <!-- Injected via JS -->
-      </div>
+      <span class="badge-red" id="modal-tag">DETALLE TÉCNICO</span>
+      <h3 class="modal-title" id="modal-title">Título</h3>
+      <div class="modal-body" id="modal-body"></div>
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>
