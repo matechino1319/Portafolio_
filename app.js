@@ -32,11 +32,11 @@ const PROJECT_DETAILS = {
   },
   'panel-scripts': {
     title: 'Panel de Scripts Web',
-    tag: 'GESTIÓN & AUTOMATIZACIÓN',
+    tag: 'GESTIÓN OPERATIVA & AUTOMATIZACIÓN',
     html: `
       <h4>Funcionamiento</h4>
-      <p>Aplicación web que permite a los operadores administrativos ejecutar procesos en segundo plano: cálculo de presentismo biométrico, reportes de convenios colectivos y liquidaciones de sueldos.</p>
-      <div class="modal-code-block">UI Web → Backend Flask → Ejecutor Asíncrono → Reporte Excel/CSV</div>
+      <p>Dashboard web que centraliza la ejecución de utilidades operativas: informes biométricos de personal, liquidaciones de convenios, control de empleados y reportes de cajeros con mayor volumen de venta.</p>
+      <div class="modal-code-block">UI Web (HTML/JS) → Backend Flask → Ejecutor de Scripts → Salida Excel/Reporte</div>
       <h4>Tecnologías</h4>
       <p>Python, Flask, SQLite, HTML5, CSS3, JavaScript.</p>
     `
@@ -64,13 +64,14 @@ const PROJECT_DETAILS = {
     `
   },
   'promociones-yunta': {
-    title: 'Automatización de Promociones',
-    tag: 'ANÁLISIS DE DATOS COMERCIALES',
+    title: 'Automatización de Promociones (Napse)',
+    tag: 'BOTS DE NAVEGADOR & RETAIL',
     html: `
       <h4>Funcionamiento</h4>
-      <p>Procesamiento automatizado de tickets de venta y facturación para analizar el impacto de programas de beneficios (jubilados, vecinos) y rendimiento por cajero.</p>
+      <p>Sistema automatizado con Selenium que interactúa con la plataforma de cajas Napse. Automatiza el login, la creación de reglas de descuento, la carga de vigencias y la sincronización de beneficios comerciales.</p>
+      <div class="modal-code-block">Definición de Promo → Generador de Reglas → Bot Selenium → Carga en Napse</div>
       <h4>Tecnologías</h4>
-      <p>Python, Pandas, Análisis de Datos.</p>
+      <p>Python, Selenium WebDriver, Napse Auth & API, Scripting.</p>
     `
   },
   'analizador-particiones': {
